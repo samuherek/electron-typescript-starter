@@ -1,0 +1,19 @@
+{
+  "name": "electron-typescript-starter",
+  "version": "0.0.1",
+  "description": "Starter for electron app with typescript",
+  "main": "main.js",
+  "repository": "https://github.com/samuherek/electron-typescript-starter.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  }
+}
